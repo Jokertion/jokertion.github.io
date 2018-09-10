@@ -13,6 +13,19 @@
 <meta name="theme-color" content="#222">
 
 
+<script>
+  (function(){
+    if(''){
+      if (prompt('请输入文章密码') !== ''){
+        alert('密码错误！');
+        history.back();
+      }
+    }
+  })();
+</script>
+
+
+
 
 
 
@@ -72,20 +85,23 @@
 
 
 
+  <link rel="shortcut icon" type="image/x-icon" href="/web_icon.jpg?v=5.1.4" />
 
 
 
 
 
 
-
+<meta name="description" content="青年应当有朝气，敢作为。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
+<meta property="og:title" content="Jokertion&#39;s Blog">
+<meta property="og:url" content="https://jokertion.com/index.html">
+<meta property="og:site_name" content="Jokertion&#39;s Blog">
+<meta property="og:description" content="青年应当有朝气，敢作为。">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Jokertion&#39;s Blog">
+<meta name="twitter:description" content="青年应当有朝气，敢作为。">
 
 
 
@@ -101,7 +117,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -115,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="https://jokertion.com"/>
 
 
+<link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
 
 
-
-  <title>Hexo</title>
+  <title>Jokertion's Blog</title>
   
 
 
@@ -133,7 +149,8 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -143,6 +160,8 @@
   <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
+	
+	<a href="https://github.com/Jokertion"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -152,7 +171,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Jokertion's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -232,7 +251,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/27/hello-world-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Jokertion">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -355,7 +374,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/27/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Jokertion">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -502,7 +521,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Jokertion</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -558,7 +577,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Jokertion</span>
 
   
 </div>
@@ -744,3 +763,5 @@
 
 </body>
 </html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
